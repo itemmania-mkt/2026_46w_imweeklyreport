@@ -196,8 +196,8 @@
         <div class="alert-icon">🔍</div>
         <div>
           <div class="alert-label">GSC CTR</div>
-          <div class="alert-val">▼ 4.26%</div>
-          <div class="alert-desc">35.50% → 33.99%<br>GSC CTR 변동</div>
+          <div class="alert-val">▼ 3.26%</div>
+          <div class="alert-desc">35.55% → 34.39%<br>GSC CTR 변동</div>
         </div>
       </div>
     </div>
@@ -238,9 +238,9 @@
       </div>
       <div class="kpi-card down">
         <div class="kpi-label">GSC CTR</div>
-        <div class="kpi-value">33.99%</div>
-        <div class="kpi-sub">전주: 35.50%</div>
-        <span class="kpi-wow down">▼ 4.26%</span>
+        <div class="kpi-value">34.39%</div>
+        <div class="kpi-sub">전주: 35.55%</div>
+        <span class="kpi-wow down">▼ 3.26%</span>
       </div>
       <div class="kpi-card up">
         <div class="kpi-label">거래건수</div>
@@ -571,7 +571,7 @@
     </div>
   </div>
 </div>
-<div class="footer">2026년 46주차 아이템매니아 마케팅 코어 인덱스 &nbsp;|&nbsp; 기간: 2026.11.09 ~ 2026.11.15 &nbsp;|&nbsp; 생성일: 2026.11.17 &nbsp;|&nbsp; 2026-46w-1 기준 · Summary 3영역 &nbsp;|&nbsp; CONFIDENTIAL</div>
+<div class="footer">2026년 46주차 아이템매니아 마케팅 코어 인덱스 &nbsp;|&nbsp; 기간: 2026.11.09 ~ 2026.11.15 &nbsp;|&nbsp; 생성일: 2026.11.24 &nbsp;|&nbsp; 2026-46w-2 기준 · Summary 3영역 &nbsp;|&nbsp; CONFIDENTIAL</div>
 <script>
 Chart.defaults.font.family="'Pretendard',-apple-system,sans-serif";
 Chart.defaults.font.size=11;
@@ -590,14 +590,14 @@ new Chart(document.getElementById('trendChart'), {
 new Chart(document.getElementById('gscChart'), {
   type:'bar',
   data:{labels:["26년42주", "26년43주", "26년44주", "26년45주", "26년46주"],datasets:[
-    {label:'클릭수',data:[158818, 149773, 156357, 149734, 109681],backgroundColor:'rgba(0,86,179,.75)',borderRadius:4},
-    {label:'노출수',data:[412529, 402149, 423979, 421194, 322723],backgroundColor:'rgba(0,86,179,.2)',borderRadius:4}
+    {label:'클릭수',data:[158818, 149773, 156357, 149734, 154761],backgroundColor:'rgba(0,86,179,.75)',borderRadius:4},
+    {label:'노출수',data:[412529, 402149, 423979, 421194, 450025],backgroundColor:'rgba(0,86,179,.2)',borderRadius:4}
   ]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{usePointStyle:true}}},scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(0,0,0,.04)'}}}}
 });
 new Chart(document.getElementById('ctrChart'), {
   type:'line',
-  data:{labels:weeks,datasets:[{label:'GSC CTR(%)',data:[31.39, 31.48, 32.78, 34.21, 35.0, 36.09, 35.68, 38.5, 37.24, 36.88, 35.55, 33.99],borderColor:'#E74C3C',backgroundColor:'rgba(231,76,60,.08)',borderWidth:2.5,pointBackgroundColor:'#E74C3C',pointRadius:4,tension:.4,fill:true}]},
+  data:{labels:weeks,datasets:[{label:'GSC CTR(%)',data:[31.39, 31.48, 32.78, 34.21, 35.0, 36.09, 35.68, 38.5, 37.24, 36.88, 35.55, 34.39],borderColor:'#E74C3C',backgroundColor:'rgba(231,76,60,.08)',borderWidth:2.5,pointBackgroundColor:'#E74C3C',pointRadius:4,tension:.4,fill:true}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:'rgba(0,0,0,.04)'},ticks:{maxRotation:30}},y:{grid:{color:'rgba(0,0,0,.04)'},ticks:{callback:function(v){return v+'%';}}}}}
 });
 new Chart(document.getElementById('ageChart'), {
